@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>personal on Michael Ladd (mjladd)</title>
+    <link>http://mjladd.github.io/tags/personal/</link>
+    <description>Recent content in personal on Michael Ladd (mjladd)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://mjladd.github.io/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>lifing</title>
+      <link>http://mjladd.github.io/blog/2008-04-27-clarity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-04-27-clarity/</guid>
+      <description>I missed nearly a month of gym time due to shoulder surgery, but I tried to be in the best possible shape going into the procedure. Over the summer I did nearly two months of two-a-day workouts and lifted up until the day of getting sliced (8/10/07). Just about a month later (9/6/07) I was ok&amp;rsquo;d to go back to the gym, and went in 20 lbs lighter and much weaker.</description>
+    </item>
+    
+  </channel>
+</rss>

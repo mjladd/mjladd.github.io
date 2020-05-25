@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Michael Ladd (mjladd)</title>
+    <link>http://mjladd.github.io/blog/</link>
+    <description>Recent content in Blogs on Michael Ladd (mjladd)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 May 2020 15:03:01 -0500</lastBuildDate>
+    
+	<atom:link href="http://mjladd.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2012 04 02 on Academics</title>
+      <link>http://mjladd.github.io/blog/2012-04-02-on-academics/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2012-04-02-on-academics/</guid>
+      <description>Having spent far too much time dealing w/ academics, I&amp;rsquo;ve had the time to gain a few opinins via both good and awful experiences.
+The Bad Stuff bad teachers Bad teachers can kill your will to learn. There were plenty of classes where I realized how little work was needed and I was able to make better use of my time by hitting the library or preparing for other classes. Classes that expect little from their students will get that back in return.</description>
+    </item>
+    
+    <item>
+      <title>2012 04 03 on the Temperature of Water</title>
+      <link>http://mjladd.github.io/blog/2012-04-03-on-the-temperature-of-water/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2012-04-03-on-the-temperature-of-water/</guid>
+      <description>Reading Grant Achatz&amp;rsquo;s book on Alinea is a pretty fair exercise in self-aggrandization, but there was a nice moment I pulled out.
+There was a discussion about not wanting table linens and the of water glasses damaging table surfaces. They worked to find the correct water temperature that would not cause condensation, while also being appropriatly cool. They were able to retain the aesthetics of a clean looking table design w/out compromising on the customer&amp;rsquo;s need for a refreshing drink.</description>
+    </item>
+    
+    <item>
+      <title>2012 05 09 the Art of Fielding</title>
+      <link>http://mjladd.github.io/blog/2012-05-09-the-art-of-fielding/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2012-05-09-the-art-of-fielding/</guid>
+      <description>This passage from &amp;lsquo;The Art of Fielding&amp;rsquo; really rang true for me.
+Schwartz cherished these private, diligent hours. All day long, no matter how hard he worked, no matter what he accomplished, a voice in his head berated him for his laziness, his sloth, his inability to concentrate. His concerns were trivial. His knowledge of history was shallow. His Latin sucked, and his Greek was worse. How did he expect to grasp Aurelius and Epictetus, inquired the voice, when he could barely string to Latin words together?</description>
+    </item>
+    
+    <item>
+      <title>2012 05 29 on Yardwork</title>
+      <link>http://mjladd.github.io/blog/2012-05-29-on-yardwork/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2012-05-29-on-yardwork/</guid>
+      <description>Spent the holiday weekend working on the yard. We tried to find landscape service, but they were all either too busy to return calls or continually canecelled meetings. Hence, DIY.
+For the last two months, I raced home from work to shovel down a quick dinner and get outside and work until it turned dark. Everything from breaking up90 square feet of concrete to pulling out and endless number of daylillies.</description>
+    </item>
+    
+    <item>
+      <title>2012 06 04 Am Start</title>
+      <link>http://mjladd.github.io/blog/2012-06-04-am-start/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2012-06-04-am-start/</guid>
+      <description>Fine way to begin the week, all mornings should start this way.
+ 4:30 am - up -&amp;gt; check email/sites/iced tea/plan workout 5:00 am - stretching/workout 6:00 am - water plants/lawn (grass is sprouting and garden is showing some promise) 6:30 am - breakfast (sausage/bagel/hashbrowns/eggs/coffee/smoothie) 7:00 am - piano practice 7:30 am - prep for work (shower/pack/plan) 8:15 am - out the door  Bonus: new headphones at work w/ some degree of noise isolation may help save my sanity.</description>
+    </item>
+    
+    <item>
+      <title>2012 08 31 Logstash Init</title>
+      <link>http://mjladd.github.io/blog/2012-08-31-logstash-init/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2012-08-31-logstash-init/</guid>
+      <description>Getting init to play nice with running a java jar file as a service was a bit of a hassle. The built-in daemonize function wasn&amp;rsquo;t able to correctly create a .pid file so here&amp;rsquo;s something that finally worked.
+{:.bash} #!/bin/sh # # chkconfig: 2345 70 40 # description: logstash startup script # LOGSTASH=/opt/logstash/logstash-1.1.1-monolithic.jar CONF=/opt/logstash/logstash.conf TMPDIR=/dev/shm export TMPDIR
+. /etc/rc.d/init.d/functions RETVAL=0 case &amp;quot;$1&amp;quot; in start) echo -n &amp;quot;Starting logstash: &amp;quot; [ -f $LOGSTASH ] || exit 1 daemon &amp;quot;java -jar $LOGSTASH agent -f $CONF &amp;amp;&amp;quot; 2&amp;gt;&amp;gt; /var/log/messages pgrep -f /opt/logstash/logstash-*-monolithic.</description>
+    </item>
+    
+    <item>
+      <title>2012 10 11 Dt9</title>
+      <link>http://mjladd.github.io/blog/2012-10-11-dt9/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2012-10-11-dt9/</guid>
+      <description>With life about to get a lot busier, I wanted to finish a bit of music. For the last year, every piece of music I wrote I hated immediately afterwards. I threw out a half-dozen tracks and started over.
+Most of this was done very quickly, often recording single takes and cleaning up afterwards. The production is a little sloppy at times, but I focused mostly on the song itself, ensuring the form of the tune was tight and the melodies memorable (which is a change from my usual focus on texture).</description>
+    </item>
+    
+    <item>
+      <title>2012 12 17 Dfw2012</title>
+      <link>http://mjladd.github.io/blog/2012-12-17-dfw2012/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2012-12-17-dfw2012/</guid>
+      <description>My big reading project for this year was to read everything written by and about David Foster Wallace. Here are the final stats:
+ 300+ journal articles (interviews, criticism, etc) a few hundred hours of audiobooks, tributes and interviews 17 books (~5874 pages .. with Infinite Jest as 20% of the total effort)  It was a good project, a lot of fun and a bit of a challenge to be in that mindset for nearly nine months of reading.</description>
+    </item>
+    
+    <item>
+      <title>2012 12 18 Reading</title>
+      <link>http://mjladd.github.io/blog/2012-12-18-reading/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2012-12-18-reading/</guid>
+      <description>Summary: This was the year of David Foster Wallace. I tried to read/listen/absorb everything I could find on his work.
+Reading List 2012
+ Continuous delivery and DevOps A Quickstart Guide - Paul Swartout DevOps for Developers - Michael Hüttermann Blood Meridian, or the Evening Redness in the West- Cormac McCarthy Both Flesh and Not: Essays - David Foster Wallace Listen to This - Alex Ross So Good They Can&amp;rsquo;t Ignore You: Why Skills Trump Passion in the Quest for Work You Love - Cal Newport The Victory Lab: The Secret Science of Winning Campaigns - Issenberg, Sasha Telegraph Avenue - Chabon, Michael Future Perfect: The Case for Progress in a Networked Age - Johnson, Steven Leaving the Atocha Station - Ben Lerner Fooling Houdini: Magicians, Mentalists, Math Geeks, and the Hidden Powers of the Mind - Alex Stone Understanding David Foster Wallace - Marshall Boswell Consider David Foster Wallace: Critical Essays - David Hering Every Love Story is a Ghost Story: A Life of David Foster Wallace - D.</description>
+    </item>
+    
+    <item>
+      <title>2013 01 05 New Year</title>
+      <link>http://mjladd.github.io/blog/2013-01-05-new-year/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2013-01-05-new-year/</guid>
+      <description>2012 was a pretty hard year to catorize and looking back at music/book purchases it seems to be one of continuously paring down the unnecessary.
+For that last 5-6 years I&amp;rsquo;ve been working to puchase less to make sure that I actually read and listen to what I own. There are the occasionnal trigger purchases, but many fewer than before. I am trying to pare down, reduce and throw away that which is unnecessary.</description>
+    </item>
+    
+    <item>
+      <title>2013 01 14 Revenge</title>
+      <link>http://mjladd.github.io/blog/2013-01-14-revenge/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2013-01-14-revenge/</guid>
+      <description>I&amp;rsquo;m about 99% positive that most of the progress I&amp;rsquo;ve made in my life is due to my teachers. Not the good ones (there were a few, but not enough), but the bad ones. The awful, lazy teachers who did nothing but make me want to have the revenge of living well. I can think of two math instructors I had who worked hard and tried to communicate, and I did great in those classes .</description>
+    </item>
+    
+    <item>
+      <title>2013 03 09 Progress</title>
+      <link>http://mjladd.github.io/blog/2013-03-09-progress/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2013-03-09-progress/</guid>
+      <description>Two months down in 2013 and I like to check in with year goals and progress. The primary priorities this year are coding and math. I&amp;rsquo;ve pushed aside reading aside from lunch hours and have done almost nothing with music. Spare time is so minimal now, I have to make the most with what little there is.
+By the end of day, after dinner, cleanup, a bit of time with the little one, I have maybe an hour to work.</description>
+    </item>
+    
+    <item>
+      <title>2013 04 06 Pushing Forward</title>
+      <link>http://mjladd.github.io/blog/2013-04-06-pushing-forward/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2013-04-06-pushing-forward/</guid>
+      <description>I&amp;rsquo;ve been thinking alot about operations lately, how to move forward and how to keep people intersted in the work that they do.
+One of concepts that makes me really respect how esty performs is their focus. They seems to have a great ability to focus on a core set of software and development processes and not be distracted by every new option that comes along. There is a constant stream of new software, ideas, new libraries, etc &amp;hellip; that offers a better, simpler, shinier way to do something.</description>
+    </item>
+    
+    <item>
+      <title>2013 05 29 Buried</title>
+      <link>http://mjladd.github.io/blog/2013-05-29-buried/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2013-05-29-buried/</guid>
+      <description>Probably the most difficult life adjustment I&amp;rsquo;ve had to make with the little on is accepting that I have to cut corners in everything I do. Every meal has to be cooked as quickly as possible. There&amp;rsquo;s no time to clean up a paint job, or make another pass at weeding a flowerbed. Life is completely timeboxed and if I want to take more than and hour or so on something I have to get up earlier or stay up later.</description>
+    </item>
+    
+    <item>
+      <title>2013 07 13 Only Changing</title>
+      <link>http://mjladd.github.io/blog/2013-07-13-only-changing/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2013-07-13-only-changing/</guid>
+      <description>As someone who plans and works towards efficiency, having a little one has taken a bit of adjustment. I&amp;rsquo;m doing my best to accept and move on and reduce my resistence to change. Trying to hold on to almost anything of my past life and schedule has been destroyed by a constant need to adjust and adapt.
+For the last eight years, I&amp;rsquo;ve worked out at 5:00am. The alarm went off at 4:30, I would get dressed, scarf down a protein bar of some kind and hit the workout.</description>
+    </item>
+    
+    <item>
+      <title>2014 11 21 Dt10</title>
+      <link>http://mjladd.github.io/blog/2014-11-21-dt10/</link>
+      <pubDate>Mon, 25 May 2020 15:03:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2014-11-21-dt10/</guid>
+      <description>It&amp;rsquo;s been a couple of years, but I got a new music product pushed out. This was entirelly for fun. It was written, tracked and mixed during lunch-hours and periods of insomnia. It&amp;rsquo;s hard to say what any of it means, but it makes me happy to listen to it.</description>
+    </item>
+    
+    <item>
+      <title>2011 12 31 Reading</title>
+      <link>http://mjladd.github.io/blog/2011-12-31-reading/</link>
+      <pubDate>Mon, 25 May 2020 15:03:00 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-12-31-reading/</guid>
+      <description>Reading List 2011
+ The Calculus Diaries - Jennifer Ouellette 1958: The Year That Changed Everything - Fred Kaplan Microsound - Curtis Roads A Game of Thrones - George R.R. Martin Scorecasting - Tobias Moskowitz Switch - Chip Heath Ignore Everybody - Hugh MacLeod The War of Art - Steven Pressfield 10 Minute Toughness - Jason Selk The Checklist Manifesto - Atul Gawande The Creative Habit - Twyla Tharp Evil Plans - Hugh MacLeod Programming Amazon EC2 - Jurg van Vilet The Talent Code - Daniel Coyle Emotional Intellegence 2.</description>
+    </item>
+    
+    <item>
+      <title>2012 03 12 New Blog</title>
+      <link>http://mjladd.github.io/blog/2012-03-12-new-blog/</link>
+      <pubDate>Mon, 25 May 2020 15:03:00 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2012-03-12-new-blog/</guid>
+      <description>Spent too much time moving this over from wordpress to jekyll, but I did take the time to pull together a bunch of old entries from other blogs. It was a trip to go back and read through stuff well over ten years old and then promptly dump most of it.
+I have a half-dozen wanna-be articles ready to be written, now that I&amp;rsquo;m done poking around the config side I need to sit down and do the hard part of actually writing.</description>
+    </item>
+    
+    <item>
+      <title>2012 03 13 Changing Puppet Paths</title>
+      <link>http://mjladd.github.io/blog/2012-03-13-changing-puppet-paths/</link>
+      <pubDate>Mon, 25 May 2020 15:03:00 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2012-03-13-changing-puppet-paths/</guid>
+      <description>Making some progress in getting our puppet manifests under a capistrano script. Everything has been under version control for awhile, but it&amp;rsquo;s been my plan to get a proper deployment configuration set up.
+Before I could get capistrano set up, I needed to make sure that puppet was running out of a new path, since cap is going to be removing and recreating symlinks.
+mkdir /etc/puppet/current mv /etc/puppet/* /etc/puppet/current
+/etc/puppet/puppet.conf[main] tagmap = /etc/puppet/current/tagmail.</description>
+    </item>
+    
+    <item>
+      <title>2012 03 16 Review of 2011</title>
+      <link>http://mjladd.github.io/blog/2012-03-16-review-of-2011/</link>
+      <pubDate>Mon, 25 May 2020 15:03:00 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2012-03-16-review-of-2011/</guid>
+      <description>Way late on this, but this draft has been sitting around for awhle. It was a pretty awful year for films, w/ Moneyball being the only film that sticks out in my memory.
+Music (no particular order):
+ Bill Frisell - All we are Saying Bon Iver - s/t Elbow - Build a Rocket Boys Fitz and the tandrums - Pickin&amp;rsquo; up the Pieces Goddamn electric bill - Jazz The great book of john - s/t Jason isbell and the 400 unit - Here we Rest My Morning Jacket - Circuital Russian Circles -Empros Tom Waits - Bad as Me TV on the Radio - Nine Types of Light The War on Drugs - Slave Ambient  Books (no particular order):</description>
+    </item>
+    
+    <item>
+      <title>2011 09 04 Meet the New Bosses</title>
+      <link>http://mjladd.github.io/blog/2011-09-04-meet-the-new-bosses/</link>
+      <pubDate>Mon, 25 May 2020 14:06:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-09-04-meet-the-new-bosses/</guid>
+      <description>Getting older has made recovery times slower and a couple of injuries are forcing me to slow down. I&amp;rsquo;m committed to taking time off now that will allow me to return to heavier lifting in about a year. My goal is to continue lifting until at least 45 yrs old. I&amp;rsquo;ve hit most of my lifting goals with the exception of a 500 lb deadlift (I was at least two years away from that).</description>
+    </item>
+    
+    <item>
+      <title>009 06 30 Vacation Day04</title>
+      <link>http://mjladd.github.io/blog/2009-06-30-vacation-day04/</link>
+      <pubDate>Mon, 25 May 2020 14:05:29 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-06-30-vacation-day04/</guid>
+      <description>Back on the road with a four-hour trip to St. Louis. The drive was beautiful and went through the Hoosier National Forrest. We headed directly to the Loop District since we couldn&amp;rsquo;t check in for a couple of hours. We had a good lunch at Fitz&amp;rsquo;s (mighty solid root-beer and creme soda on tap) and stopped at a Subterranean Books (nice bookstore with a small but decent selection). We walked around most of the Loop District as well as finding a branch of Left-Bank Books which was also small but hosted an appropriate collection of books.</description>
+    </item>
+    
+    <item>
+      <title>2009 10 23 DC2009 Day 1</title>
+      <link>http://mjladd.github.io/blog/2009-10-23-dc2009-day-1/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-10-23-dc2009-day-1/</guid>
+      <description>Had a great trip out to DC, one of my favorite places on earth. Chicago has my heart, but DC pulls at my head. Such a nerd town in a non-geek way, but also has an ugly self-indulgent / self-promotional feel.
+We had a quick flight out and stayed in a fancy-pants hotel just off of Dupont Circle. Lots of places to check out in Dupont including Afterwords bookstore. How can you not love a book store that is open by 7:30 am and is open all night on weekends.</description>
+    </item>
+    
+    <item>
+      <title>2009 10 24 DC2009 Day 2</title>
+      <link>http://mjladd.github.io/blog/2009-10-24-dc2009-day-2/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-10-24-dc2009-day-2/</guid>
+      <description>We started the day with a mighty fine breakfast at Afterwards and then hit up a tourist trolley up to The National Cathedral. There&amp;rsquo;s a great view of the city from the top floor and the cathedral itself is massively amazing.
+We hopped back on the trolley and spend a couple hours in Georgetown. We had lunch at Billy Martin&amp;rsquo;s tavern where John Kennedy proposed to Jackie. It was pretty standard tavern food, but good service and a nice, homey vibe.</description>
+    </item>
+    
+    <item>
+      <title>2009 10 25 DC2009 Day 3</title>
+      <link>http://mjladd.github.io/blog/2009-10-25-dc2009-day-3/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-10-25-dc2009-day-3/</guid>
+      <description>Last day and plenty to get to. We had a quick breakfast at Firehook Bakery and headed out to the Newseum. It had just opened last time we were in town but I&amp;rsquo;m glad we made the trip this time. It was pretty impressive to see a half-dozen massive chunks of the Berlin Wall as well as a broken portion from the World Trade Center antenna. The 9-11 exhibit was pretty tough and we skipped the documentary.</description>
+    </item>
+    
+    <item>
+      <title>2009 12 07 W15d1</title>
+      <link>http://mjladd.github.io/blog/2009-12-07-w15d1/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-12-07-w15d1/</guid>
+      <description>This is supposed to a be complete week off from lifting. After taking the weekend off, I had to get in and do something. I&amp;rsquo;m going to focus on getting in some cardio and doing more ab work and recovery work on my shoulders.
+I spent nearly 30 hrs over the extended weekend working on music. I finally got around to reading and watching a bunch of tutorials for the Native Instruments software and have a better handle on things like Kore2 and Reaktor.</description>
+    </item>
+    
+    <item>
+      <title>2009 12 31 Reading</title>
+      <link>http://mjladd.github.io/blog/2009-12-31-reading/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-12-31-reading/</guid>
+      <description>Reading List 2009
+ Understanding Comics - Scott McCloud Reinventing Comics - Scott McCloud Practical Ruby for System Administration - André Ben Hamou Maximum Strength - Eric Cressey Starting Strength - Mark Rippetoe Pulling Strings with Puppet - James Turnbull Let&amp;rsquo;s Play Doctor - Mark Leyer and Billy Goldberg Emergency - Neil Strauss Moneyball - Michael Lewis The Art of Capacity Planing - John Allspaw The War of Art - Steven Pressfield The Pixar Touch - David Price Made to Stick - Chip Heath and Dan Heath Spaceman Blues - Brian Francis Slattery The Design of Everyday Things - Don Norman Linked - Albert-Laszlo Barabasi The Sheltering Sky - Paul Bowles The Task of This Translator - Todd Hasak-Lowy Kitchen Confidential - Anthony Bourdain The Strain - Guillermo Del Toro &amp;amp; Chris Hogan The Black Swan - Nassim Nicholas Taleb Scarecrow - Michael Connelly Sleeping With the Devil - Robert Baer Infinite Jest - David Foster Wallace The Magicians - Lev Grossman Infinite Jest: A Reader&amp;rsquo;s Guide - Stephen Burn Brief Interviews With Hideous Men - David Foster Wallace The Graveyard Book - Neil Gaiman Rosencrantz and Guildenstern are Dead - Tom Stoppard Superfreakonomics - Levitt &amp;amp; Dubner The Complete Game - Ron Darling Eating the Dinosaur - Chuck Klosterman The Great Derangement - Matt Taibbi Up in the Air - Walter Kirn The Book of Basketball - Bill Simmons Netherland - Joseph O&amp;rsquo;Neill  </description>
+    </item>
+    
+    <item>
+      <title>2009 Vacation Day05</title>
+      <link>http://mjladd.github.io/blog/2009-vacation-day05/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-vacation-day05/</guid>
+      <description>Got up early and spent the day doing mostly touristy stuff. We started at the Arch early enough to beat the crowd. I&amp;rsquo;ve been surprised at how few people we&amp;rsquo;ve seen on vacation, short lines everywhere. The view was great and the trip up/down was cramped but not awful.
+We headed out to the Botanical Gardens for a few hours and walked around. It was a pretty decent day weather-wise, but after a few hours it warmed up and my blood sugar crashed.</description>
+    </item>
+    
+    <item>
+      <title>2009 Vacation Day06</title>
+      <link>http://mjladd.github.io/blog/2009-vacation-day06/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-vacation-day06/</guid>
+      <description>Hit the road to Kansas City. We stopped just outside of St. Louis to grab breakfast at Bob Evans. It was another pretty easy drive. Once we got into town we headed towards the 18th and Vine district to see the Negro Leagues Museum. On the way there we passed by Arthur Bryant&amp;rsquo;s (most BBQ fans know the name) so we stopped in for lunch. It was a nice solid sliced pork sandwich on Wonder Bread.</description>
+    </item>
+    
+    <item>
+      <title>2010 04 15 Reading Progress</title>
+      <link>http://mjladd.github.io/blog/2010-04-15-reading-progress/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2010-04-15-reading-progress/</guid>
+      <description>I blew through Lipsky&amp;rsquo;s book on David Foster Wallace in two sittings. The times that Lipsky inserted himself or his thoughts was distracting, but it was great to dive into Wallace&amp;rsquo;s head for a nice chunk of time. I was happy with how ended, it would have been easy to be morose, but instead I was left with much happier memories. I like thinking about how much DFW was enjoying the process of writing and how he was looking forward to working for a good length of time.</description>
+    </item>
+    
+    <item>
+      <title>2010 04 29 Drive to 400</title>
+      <link>http://mjladd.github.io/blog/2010-04-29-drive-to-400/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2010-04-29-drive-to-400/</guid>
+      <description>Every year I come up with a crazy workout goal to keep things interesting. A couple of years ago it was going through Eric Cresey&amp;rsquo;s plan and last year it was going through Dave Tate&amp;rsquo;s Strong(e)r workout series (which ironically didn&amp;rsquo;t leave me stronger, but I think it did improve overall physical fitness).
+These are the totals from the last time I tested max lifts.
+Bench 335 Squat 375 Deadlift 385 1095  This year I want to push those three lifts to either hit or get close to 400 lbs.</description>
+    </item>
+    
+    <item>
+      <title>2010 06 28 Deadlift PR</title>
+      <link>http://mjladd.github.io/blog/2010-06-28-deadlift-pr/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2010-06-28-deadlift-pr/</guid>
+      <description>Hit a personal record of 405 deadlift this morning. I wasn&amp;rsquo;t planning on maxing out, I had done a pretty heavy squat set two days earlier and my hamstrings were pretty sore. I had also only had about five hours of sleep, so conditions were less than ideal. I ended up feeling pretty strong after a few warm up sets and decided to go for it.
+I still want to add about 20 lbs by the end of the year and I&amp;rsquo;m starting to feel optimistic that I may reach my goal.</description>
+    </item>
+    
+    <item>
+      <title>2010 12 31 Reading</title>
+      <link>http://mjladd.github.io/blog/2010-12-31-reading/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2010-12-31-reading/</guid>
+      <description>Reading List 2010
+ Drive - Daniel Pink The Toy Collector - James Gunn After the Workshop - John McNally Spanking the Donkey - Matt Taibbi Anathem - Neil Stephenson The Astonishing Life of Octavian Nothing Vol 1 - M. T. Anderson Smells Like Dead Elephants - Matt Taibbi Switch - Chip &amp;amp; Dan Heath The Logic of Life - Tim Harford You Remind Me of Me - Dan Chaon Next - James Hynes The Girl with the Dragon Tattoo - Stieg Larsson The Checklist Manifesto - Atul Gawande Although of Course You End Up Becoming Yourself: A Road Trip With David Foster Wallace - David Lipsky Serious Barbecue - Adam Perry Lang Feed - MT Anderson The Girl Who Played With Fire - Stieg Larsson The Undercover Economist - Tim Harford The Big Short - Michael Lewis Girl With Curious Hair - David Foster Wallace For The Win - Cory Doctorow Chicago: A Biography - Domnic Pacyga Bloom County: Vol II - Berkeley Breathed The Girl Who Kicked the Hornet&amp;rsquo;s Nest - Stieg Larsson Florida Roadkill - Tim Dosey Outliers - Malcom Gladwell The Deep Blue Good-By - John D.</description>
+    </item>
+    
+    <item>
+      <title>2011 01 02 Dt8</title>
+      <link>http://mjladd.github.io/blog/2011-01-02-dt8/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-01-02-dt8/</guid>
+      <description>I finished DT8over vacation. It was written in fits and starts over the last three/four months in quick chunks whenever I could grab some time. Mostly written in the early morning hours when I couldn&amp;rsquo;t sleep (2:30-5am mostly and a few rushed lunch hours at home).
+This was the first time I spend the cash and starting adding live instruments to the recordings.
+Tech Notes Software: Logic 9, Komplete 7, Reason (only for the track Recessed), Axon, Tattoo, ValhallaShimmer Hardware: Pod X3, Shure Beta 58, Gretsch Electromatic G5120, Taylor 114ce, Ovation Celebrity, Kamouraska Concert, Oxygen 49</description>
+    </item>
+    
+    <item>
+      <title>2011 01 02 Review2010</title>
+      <link>http://mjladd.github.io/blog/2011-01-02-review2010/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-01-02-review2010/</guid>
+      <description>I didn&amp;rsquo;t reach my &amp;lsquo;Road to 400 Goals&amp;rsquo; but I did end the year with a personal record for deadlift and weighted in 10 lbs lighter by the end of the year. Most of my lifts remained the same or went up, so I&amp;rsquo;m happy to have retained muscle mass while loosing a bit of extra weight.
+Since I&amp;rsquo;ve been doing so much heavy work, I&amp;rsquo;m going to start off the year with a couple months of high-rep, low-weight work with an emphasis on getting my heart rate up.</description>
+    </item>
+    
+    <item>
+      <title>2011 01 02 Xmas Break 2010</title>
+      <link>http://mjladd.github.io/blog/2011-01-02-xmas-break-2010/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-01-02-xmas-break-2010/</guid>
+      <description>Trip to Indianapolis to hit bookstores and see downtown. Decent hotel right on the circle. We checked out the Kurt Vonnegut Memorial Library which had some great photos of Vonnegut. We also did a quick drive-by of the Fountain Square district which is probably much better nicer when it&amp;rsquo;s warm enough to actually walk around. Trip to Louisville to visit the brother. We hit a few bookstores and ate very well as always.</description>
+    </item>
+    
+    <item>
+      <title>2011 01 15 Kickoff</title>
+      <link>http://mjladd.github.io/blog/2011-01-15-kickoff/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-01-15-kickoff/</guid>
+      <description>After finishing the last music project, I was starting off the year wallowing with a lack of plans. From all the time spent in school, I seem to work better with a plan that involves projects ramping up and down. Without it, it just feels like one endless stream of days and I end up like David Byrne, &amp;ldquo;My god, how did I get here?&amp;quot;. I need the list of tasks checked off and projects complete to assure myself that I&amp;rsquo;m not wasting time.</description>
+    </item>
+    
+    <item>
+      <title>2011 01 22 Thinking About Sonny</title>
+      <link>http://mjladd.github.io/blog/2011-01-22-thinking-about-sonny/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-01-22-thinking-about-sonny/</guid>
+      <description>When I was a music student, I read biographies of pretty much any musician I could grab from the library: John Coltrane, Miles Davis, Pablo Casals, etc. The story of Sonny Rollins and The Bridge is one of the few that has stuck with me.
+In 1959, Sonny Rollins took a break from music. Although he was one of the finest sax players at the time, he felt pressure from other musicians such as John Coltrane (who emerged from working with Thelonius Monk and a second stint with Miles Davis a reinvented musician) and Ornette Colman who were changing jazz in significant ways.</description>
+    </item>
+    
+    <item>
+      <title>2011 01 29 Milton Babbitt</title>
+      <link>http://mjladd.github.io/blog/2011-01-29-milton-babbitt/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-01-29-milton-babbitt/</guid>
+      <description>I just read about Milton Babbitt passing away. When I was in school, Babbitt was often brought up as an quintessential 20th Century composer. While much of his music didn&amp;rsquo;t appeal to me, his idea and concepts of music have stuck in my craw. He may be best know for a well-referenced essay, &amp;ldquo;Who Cares If You Listen&amp;rdquo;.
+For some reason, his thoughts on how series music need not appeal to the general public didn&amp;rsquo;t seem to register with many composer that I met in school.</description>
+    </item>
+    
+    <item>
+      <title>2011 02 06 Lyle Lovett vs Dwight Yoakam</title>
+      <link>http://mjladd.github.io/blog/2011-02-06-lyle-lovett-vs-dwight-yoakam/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-02-06-lyle-lovett-vs-dwight-yoakam/</guid>
+      <description>I spent the summer of 1999 working sound for the Interlochen Center for the arts. It was a great opportunity to see how professional artists tour. I was amazed by how quick a touring staff is able to set up and tear down within a day. Two of the artist that made the most impression (for very different reasons) were Lyle Lovett and Dwight Yoakam.
+I&amp;rsquo;ve been a fan of Mr.</description>
+    </item>
+    
+    <item>
+      <title>2011 02 06 Result of Quality</title>
+      <link>http://mjladd.github.io/blog/2011-02-06-result-of-quality/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-02-06-result-of-quality/</guid>
+      <description>I&amp;rsquo;ve been on a big David Simon kick since I&amp;rsquo;ve been re-watching &amp;lsquo;The Wire&amp;rsquo; with Jen. Although it took me a few episodes to dig in when I watched it the first time, I (like many folks) became enamored without the show. Critical acclaim naming the best TV Series ever is not to be dismissed.
+The side affect of &amp;ldquo;The Wire&amp;rdquo; (for myself) is being unable to watch any other cop-related programming without a fair amount of teeth gritting at the low quality writing and ridiculous plot lines.</description>
+    </item>
+    
+    <item>
+      <title>2011 02 21 George Winston Sleep Inducing</title>
+      <link>http://mjladd.github.io/blog/2011-02-21-george-winston-sleep-inducing/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-02-21-george-winston-sleep-inducing/</guid>
+      <description>I was thinking about a few more concerts that I did the sound for. George Winston may have been the most uncomfortable performance that I ever personally witnessed.
+Winston plays sleepy/new-agey piano music that I can tolerate for maybe 2-3 tunes, but after that it just makes me tired. I was responsible for setting up microphones and running sound reinforcement for the show. I met briefly with his manager prior to the performance to ensure that things were set to his specifications.</description>
+    </item>
+    
+    <item>
+      <title>2011 03 06 My Aircraft</title>
+      <link>http://mjladd.github.io/blog/2011-03-06-my-aircraft/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-03-06-my-aircraft/</guid>
+      <description>I just finished rereading &amp;ldquo;The Checklist Manifesto&amp;rdquo; which seems to have become one of my &amp;ldquo;give it the once-over every year&amp;rdquo; books. The last section is an overview of the US Airways Flight 1549 which landed in the Hudson River. The phrase &amp;ldquo;my aircraft&amp;rdquo; really hit me in a good way.
+When things went south and Captain Sullenberger realized that both engines had lost power he look over the flight from the co-pilot Jeffrey Skiles.</description>
+    </item>
+    
+    <item>
+      <title>2011 07 30 Reboot</title>
+      <link>http://mjladd.github.io/blog/2011-07-30-reboot/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-07-30-reboot/</guid>
+      <description>With the home purchase and wedding planning going on, there&amp;rsquo;s been little time left for anything else. I&amp;rsquo;ve been doing my best to keep up with my reading projects and making sure I hit the gym 3x a week, but anything else has pretty much been ignored.
+As things have settled down and with the year half-over, it&amp;rsquo;s time to reboot and replan. I have a hard time feeling like I&amp;rsquo;m making any progress without some structure.</description>
+    </item>
+    
+    <item>
+      <title>2011 08 07 on Code</title>
+      <link>http://mjladd.github.io/blog/2011-08-07-on-code/</link>
+      <pubDate>Mon, 25 May 2020 14:05:05 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2011-08-07-on-code/</guid>
+      <description>Thinking back on taking programming programming classes in school, java and c++, I couldn&amp;rsquo;t have been more bored. I had no reason to care about flipping the order of characters or determining how long a string was. It all meant nothing to me. The tiny little details that at the end of a semester added up to .. nothing.
+Then I found myself working with linux and learning about bash, and now .</description>
+    </item>
+    
+    <item>
+      <title>2008 04 06 Baby Huey</title>
+      <link>http://mjladd.github.io/blog/2008-04-06-baby-huey/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-04-06-baby-huey/</guid>
+      <description>Been listening to a lot of funk and soul music. I like digging up artists from obscure areas of the US where I never imagined funk to emerge. Listening to &amp;lsquo;The Baby Huey Story: The Living Legend &#39; right now. Nice touch, James &amp;ldquo;Baby Huey&amp;rdquo; Rame was born in Richmond, IN (which if I remember correctly became the home for one of the Graham Brothers) and moved to Chicago at nineteen.</description>
+    </item>
+    
+    <item>
+      <title>2008 04 23 Simplify</title>
+      <link>http://mjladd.github.io/blog/2008-04-23-simplify/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-04-23-simplify/</guid>
+      <description>Thinking of how to keep my life in sync b/w work and home. Normally everything lives in a DevonThink database so all of my research is with me all the time. I&amp;rsquo;ve been trying to put more of my day-to-day notes and calendar stuff into .txt files and run the risk of forgetting to copy things back and forth to my USB key.
+What I really want is for my /home to live on my iPod, so I can plug in and work, but that hasn&amp;rsquo;t happened yet.</description>
+    </item>
+    
+    <item>
+      <title>2008 06 12 Packed Up</title>
+      <link>http://mjladd.github.io/blog/2008-06-12-packed-up/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-06-12-packed-up/</guid>
+      <description>Heading out in the morning for the big east coast trip. Three/Four cities in one week (Boston, DC, Baltimore, Philadelphia). It is the first vacation we&amp;rsquo;ve been able to take in nearly three years, so I&amp;rsquo;m pretty excited. It&amp;rsquo;ll be nice to be able to visit with friends as well.
+The worse thing about AM flights is that I can never sleep well. I&amp;rsquo;ll probably end up waking up 5-6 times and being unable to sleep on the flight.</description>
+    </item>
+    
+    <item>
+      <title>2008 06 20 Day in Chicago</title>
+      <link>http://mjladd.github.io/blog/2008-06-20-day-in-chicago/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-06-20-day-in-chicago/</guid>
+      <description>Had some personal days to use, so Jen and I headed downtown today. Had a fantastic day, gorgeous weather, good food, no complaints at all. Had a great breakfast at &amp;lsquo;Orange&amp;rsquo;: fruit sushi, cinnamon roll pancakes, and fruit kabob.
+We checked out the Apple Store on Michigan Ave, and walked down to Millenium Park and caught part of an orchestra rehearsal. It was a great day off, something I haven&amp;rsquo;t had since November.</description>
+    </item>
+    
+    <item>
+      <title>2008 06 27 Msit Graduation</title>
+      <link>http://mjladd.github.io/blog/2008-06-27-msit-graduation/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-06-27-msit-graduation/</guid>
+      <description>Last Friday I graduated from the MSITprogram at Northwestern. It&amp;rsquo;s took too years and way too much money, but it&amp;rsquo;s over. It certainly wasn&amp;rsquo;t every I hoped for, but it&amp;rsquo;s over. Coming from a tiny town in Indiana, I never thought I would ever graduate from any university of any renown (BM and MM from Ball State). It was a personal success in that regard.
+I now have my Saturdays free, and am looking forward to taking my first vacation in several years.</description>
+    </item>
+    
+    <item>
+      <title>2008 06 28 Inspiration</title>
+      <link>http://mjladd.github.io/blog/2008-06-28-inspiration/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-06-28-inspiration/</guid>
+      <description>Simultaneously inspiring and ego damaging to read about someone (Cameron Sinclair) my own age doing such amazing work. His Ted videois well worth watching. People like him really make me ask why I am wasting my life and how can I move forward.
+As much as the Ted stuff can be accused of being elitist, there is some goddamned inspiring work.</description>
+    </item>
+    
+    <item>
+      <title>2008 07 22 Brad Bird</title>
+      <link>http://mjladd.github.io/blog/2008-07-22-brad-bird/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-07-22-brad-bird/</guid>
+      <description>Just got back from vacation and trying to catch up on email, rss feeds and laundry.
+Came across this quote yesterday that I really liked.
+“In my experience, the thing that has the most significant impact on a movie’s budget–but never shows up in a budget–is morale. If you have low morale, for every $1 you spend, you get about 25 cents of value. If you have high morale, for every $1 you spend, you get about $3 of value.</description>
+    </item>
+    
+    <item>
+      <title>2008 09 14 Dfw</title>
+      <link>http://mjladd.github.io/blog/2008-09-14-dfw/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-09-14-dfw/</guid>
+      <description>Sun, 14 Sep 2008 03:29:56 +0000My favorite writer commited suicide yesterday. Looking at my bookshelves there&amp;rsquo;s not many left. Bukowski, Burroughs and Carver are long gone, Selby and Thompson much more recent.
+Alongside with his commencement address, I&amp;rsquo;ll be re-reading my favorite short story by him as well, &amp;lsquo;Good Old Neon&amp;rsquo;.
+ (Good Old Neon - excerpt) The reality is that dying isn&amp;rsquo;t bad, but it takes forever. And that forever is no time at all.</description>
+    </item>
+    
+    <item>
+      <title>2008 10 25 WWs04e01</title>
+      <link>http://mjladd.github.io/blog/2008-10-25-wws04e01/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-10-25-wws04e01/</guid>
+      <description>Sat, 25 Oct 2008 18:03:09 +0000Making my way through the West Wing DVDs. The end of episode 1 season 4:
+&amp;ldquo;If our job teaches us anything, it&amp;rsquo;s that we don&amp;rsquo;t know what the next President&amp;rsquo;s gonna face. And if we choose someone with vision, someone with guts, someone with gravitas, who&amp;rsquo;s connected to other people&amp;rsquo;s lives, and cares about making them better&amp;hellip; if we choose someone to inspire us, then we&amp;rsquo;ll be able to face what comes our way and achieve things&amp;hellip; we can&amp;rsquo;t imagine yet.</description>
+    </item>
+    
+    <item>
+      <title>2008 10 31 Studs and Himself</title>
+      <link>http://mjladd.github.io/blog/2008-10-31-studs-and-himself/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-10-31-studs-and-himself/</guid>
+      <description>Fri, 31 Oct 2008 21:32:53 +0000With the passing of Studs Terkel and DFW last month, Mr. Terkel&amp;rsquo;s quote is very apt.
+ &amp;ldquo;With optimism, you look upon the sunny side of things. People say, &amp;lsquo;Studs, you&amp;rsquo;re an optimist.&amp;rsquo; I never said I was an optimist. I have hope because what&amp;rsquo;s the alternative to hope? Despair? If you have despair, you might as well put your head in the oven.&amp;rdquo;
+ </description>
+    </item>
+    
+    <item>
+      <title>2008 11 06 Tom Waits Live</title>
+      <link>http://mjladd.github.io/blog/2008-11-06-tom-waits-live/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-11-06-tom-waits-live/</guid>
+      <description>There&amp;rsquo;s a very short list of musicians that I care to see live. The live environment involves people, and people generally ruin everything. Tom Waits is on that very short list. I&amp;rsquo;ve been a fan of Mr. Waits since the fall of 1992, borrowing a tape of &amp;lsquo;Bone Machine&amp;rsquo; from Jason Guski (sp?) and reveling in the harshness of &amp;lsquo;Earth Died Screaming&amp;rsquo; and &amp;lsquo;Goin out West&amp;rsquo; as well as the heartbreaking performances of &amp;lsquo;Little Rain&amp;rsquo; and &amp;lsquo;Who Are You&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>2008 12 10 Wisdom of Fripp</title>
+      <link>http://mjladd.github.io/blog/2008-12-10-wisdom-of-fripp/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-12-10-wisdom-of-fripp/</guid>
+      <description>From Robert Fripp:
+&amp;ldquo;We are only ready to undertake a piece of work when we have completed that piece of work. Doing the task prepares us to do the task: we are learning on the job. So, clearly, we don’t understand how to do the job until we’ve already done it.&amp;rdquo;
+It always drove me nuts to attempt to estimate time for project managers. Estimates would be tossed out with no basis in reality and I could only say &amp;ldquo;I don&amp;rsquo;t know.</description>
+    </item>
+    
+    <item>
+      <title>2008 12 31 Reading</title>
+      <link>http://mjladd.github.io/blog/2008-12-31-reading/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-12-31-reading/</guid>
+      <description>Counting down the weeks to finish up with classes. Hopefully when finished my available reading time will increase. My plans this year include knocking out a list of books that have been gathering dust on the shelves for a few years (I&amp;rsquo;m looking at you Thomas Wolfe).
+Reading List 2008
+ Cloud Atlas - David Mitchell The Halo Effect - Phil Rosenzweig Bridge of Sighs - Richard Russo Gasping for Airtime - Jay Mohr Dreaming in Code - Scott Rosenberg The Search - John Battelle Four Days to Glory - Mark Kreidler Coltrane: The Story of a Sound - Ben Ratliff Friday Night Lights - H.</description>
+    </item>
+    
+    <item>
+      <title>2009 05 19 Gppw4scc1</title>
+      <link>http://mjladd.github.io/blog/2009-05-19-gppw4scc1/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-05-19-gppw4scc1/</guid>
+      <description>Day off from the gym, but Jen and I walked this morning. It was good to get up early and have a couple of hours to make some progress on a few projects before heading to work. I have a list on my desktop asking why am I not work on &amp;hellip; mathmatica, music, ruby.
+There has been a long, bitter and angry history with mathematics in my past but the first time I saw mathematica in college I thought it was fantastic.</description>
+    </item>
+    
+    <item>
+      <title>2009 05 20 on Pixar</title>
+      <link>http://mjladd.github.io/blog/2009-05-20-on-pixar/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-05-20-on-pixar/</guid>
+      <description>I&amp;rsquo;ve been reading about Pixar, the company. One of my favorite notes is how much of their history lies in failure. The main computer scientist started off working in a boring CAD company, Jon Lasseter was fired from Disney, the company itself was sold by Lucas to Jobs who then tried to sell of parts of it for years. Even when &amp;lsquo;Toy Story&amp;rsquo; was set to be released, Mattel and Hasbro couldn&amp;rsquo;t be bothered to distribute toys (Disney&amp;rsquo;s primary concern?</description>
+    </item>
+    
+    <item>
+      <title>2009 05 21 Dt4 Progress</title>
+      <link>http://mjladd.github.io/blog/2009-05-21-dt4-progress/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-05-21-dt4-progress/</guid>
+      <description>Finished a track last night, &amp;lsquo;Passing&amp;rsquo;, three left to go. Hopefully I&amp;rsquo;ll finish them this weekend and take the next week to mix and hopefully master next weekend. I&amp;rsquo;m listening to some of the tracks that I finished months ago and I&amp;rsquo;m reasonably happy with them. I&amp;rsquo;m trying some new ideas and they have a different sound than the last project.
+I like getting up early to get work done but sometimes at night when I&amp;rsquo;m on a roll I start to get some anxiety about getting enough sleep to hit the gym in the morning.</description>
+    </item>
+    
+    <item>
+      <title>2009 05 30 Made to Stick</title>
+      <link>http://mjladd.github.io/blog/2009-05-30-made-to-stick/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-05-30-made-to-stick/</guid>
+      <description>Finished &amp;lsquo;Made to Stick&amp;rsquo; the other day. Solid read, like Gladwell without the arrogance but with some practicality.
+I like the way that the authors emphasis the use of &amp;lsquo;the story&amp;rsquo; and how much more effective and &amp;lsquo;sticky&amp;rsquo; concepts are when they are built into a story.
+They break &amp;lsquo;stickiness&amp;rsquo; into five concepts: simple, unexpected, concrete, emotional and stories. There are definitive examples within each concept that effectively help ideas adhere become easier to recall.</description>
+    </item>
+    
+    <item>
+      <title>2009 06 04 Vacation Day08</title>
+      <link>http://mjladd.github.io/blog/2009-06-04-vacation-day08/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-06-04-vacation-day08/</guid>
+      <description>Made the trip from KC to Des Moines, IA with a fueling up stop at Cracker Barrel. DM was .. a less than thrilling stop. We hit the only bookstore we could find and grabbed some lunch at a really lousy mexican place in the capital district. We stopped at the busiest place we could find, but the food had almost no taste at all. I had a minor panic attack while walking around the area.</description>
+    </item>
+    
+    <item>
+      <title>2009 06 17 Vacation Day01</title>
+      <link>http://mjladd.github.io/blog/2009-06-17-vacation-day01/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-06-17-vacation-day01/</guid>
+      <description>Heading out of Skokie around 6:00 am and made it through the city with no issues. It was a smooth trip until reaching Merrillville when we saw a notice about an accident on I65. The interstate was closed several miles south so we took a detour through Crown Point down state road 55 and picked up I65 again in Roselawn.
+Just a bit south of Lafayette we stopped at Jen&amp;rsquo;s friends house who was home working at her parents farm.</description>
+    </item>
+    
+    <item>
+      <title>2009 06 25 Fathers Day</title>
+      <link>http://mjladd.github.io/blog/2009-06-25-fathers-day/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-06-25-fathers-day/</guid>
+      <description>Father&amp;rsquo;s Day 2009
+I really like this photo of my grandparents at the Indiana Dunes. I think it was from when they were both in high school or just out.
+Also from high school, my grandfather and a friend of his skipped school one day and made a road trip to Vassar College. They&amp;rsquo;re wearing their Roosevelt High School sweaters.
+I like to remember my grandfather like this. He had a habit of working outside until tired and then taking a nap.</description>
+    </item>
+    
+    <item>
+      <title>2009 06 28 Vacation Day02</title>
+      <link>http://mjladd.github.io/blog/2009-06-28-vacation-day02/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-06-28-vacation-day02/</guid>
+      <description>Had a pretty awful night of sleep. I rarely sleep well for the first couple nights of vacation. It&amp;rsquo;s a big mental adjustment trying to get my brain to relax. We slept in pretty late and then headed out to walk around the area. We headed west towards the canal walk and the state park. We caught a nice film about Alaska at the Omnimax theatre. I can watch nearly anything in Omni format.</description>
+    </item>
+    
+    <item>
+      <title>2009 06 29 Vacation Day03</title>
+      <link>http://mjladd.github.io/blog/2009-06-29-vacation-day03/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-06-29-vacation-day03/</guid>
+      <description>Got up fairly early and made the trip to Louisville. It was an easy 90 minutes on the road and we made it in time for breakfast at the North End Cafe. We hit the local Half-Price bookstores and after loading up on McAllister&amp;rsquo;s sweet tea, we headed out a bit south of the city to the Zappo&amp;rsquo;s outlet store. The store portion is tiny compared to the massive warehouse. It looked the length of two football fields.</description>
+    </item>
+    
+    <item>
+      <title>2009 07 02 Infinite Summer</title>
+      <link>http://mjladd.github.io/blog/2009-07-02-infinite-summer/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-07-02-infinite-summer/</guid>
+      <description>I&amp;rsquo;ve been participating in the infinite summer read. It&amp;rsquo;s brought up a lot of memories since the first time I read Infinite Jest was on vacation ten years ago. I had just finished school and Jen and I were going to take a trip westward to visit my friend Nathan. We had little money and I needed a large book for the flight there and back. I found a British printing of IJ in the discount bin at Barnes and Noble.</description>
+    </item>
+    
+    <item>
+      <title>2009 07 02 Vacation Day07</title>
+      <link>http://mjladd.github.io/blog/2009-07-02-vacation-day07/</link>
+      <pubDate>Mon, 25 May 2020 14:05:04 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2009-07-02-vacation-day07/</guid>
+      <description>Started the day by visiting the nearby Harley Davidson factory in Kansas City. I&amp;rsquo;m not a bike person, but I appreciate craftsmanship and HD&amp;rsquo;s ability to gardner customer loyalty.
+ all workers who drive HDs park in the very front of the building, there is a lot of pride in showing off their personal machines HD managers and factor workers and undistinguishable, they all wear identical clothing (mostly HD gear but it is not required) the only tie I saw was worn by a visitor managers and workers use the same dining area and parking managers and union leaders share the same office space plant workers in different cells are responsible for self-organizing and prioritizing duties all workers in each cell are required to switch off every job, every worker knows every duty of the job robots are cool, lots of precision robot work is performed, but hand-checked by humans  After the trip to HD, we hunted down a local bookstore (Prospero&amp;rsquo;s) where Jen found a couple of treasures and then walked around downtown KC.</description>
+    </item>
+    
+    <item>
+      <title>005 10 20 Conference Misery</title>
+      <link>http://mjladd.github.io/blog/2005-10-20-conference-misery/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2005-10-20-conference-misery/</guid>
+      <description>So I&amp;rsquo;ve survived another mind-numbing conference. Powerpoint is certainly the work of the devil, if for no other reason that it is very successful in making learning tedious. Session after session of green text on white templates, with monotonous speakers droning on about topics they care nothing about.
+I think I actually picked up two useful bits of knowledge that could have taken the sum total of 25 seconds, rather than two days.</description>
+    </item>
+    
+    <item>
+      <title>2005 10 21 Conference Misery Pt2</title>
+      <link>http://mjladd.github.io/blog/2005-10-21-conference-misery-pt2/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2005-10-21-conference-misery-pt2/</guid>
+      <description>The last session of the first day was on &amp;lsquo;Protecting Your Software Investment&amp;rsquo;. The description of the session follows:
+&amp;ldquo;Patching, Security (Internal and External) , Speed of Access, Disaster Preparedness, Data Recovery, Backup Options&amp;rdquo;
+I&amp;rsquo;m a sucker for anything related to disaster recovery and security, so no matter how badly I really wanted to leave so I could go home and pass out in a Nyquil induced haze, I forced myself to attend.</description>
+    </item>
+    
+    <item>
+      <title>2005 12 31 Reading</title>
+      <link>http://mjladd.github.io/blog/2005-12-31-reading/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2005-12-31-reading/</guid>
+      <description>Summary:
+I remember thinking that I needed to start learning more of the business world, so I drifted a bit away from fiction. Not too many new discoveries, but writers like TC Boyle continued to put out solid books.
+Reading List 2005
+ Radio On - Sarah Vowell Take the Cannoli - Sarah Vowell Sock - Penn Jillette The Partly Cloudy Patriot - Sarah Vowell Searching for Bobby Fischer - Fred Waitzkin How We Are Hungry - David Eggers Hoot - Carl Hiaasen The Amazing Adventures of Kavalier and Clay - Michael Chabon Will You Please Be Quiet, Please - Raymond Carver The Wasp Factory - Iain Banks The Coen Brothers - Ronald Borgan The Mischievous Art of Jim Flora - Irwin Chusid After the Plague - T.</description>
+    </item>
+    
+    <item>
+      <title>2006 02 07 a Short History of Nearly Everything</title>
+      <link>http://mjladd.github.io/blog/2006-02-07-a-short-history-of-nearly-everything/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2006-02-07-a-short-history-of-nearly-everything/</guid>
+      <description>I&amp;rsquo;ve always had a fascination with science. If I remember back to my Kindergarden years my plan at the time was to become a chemist. I think it was just the cool instruments and lots of dangerous chemicals.
+I&amp;rsquo;m about half-way through Bill Bryson&amp;rsquo;s book A Short History of Nearly Everything and it&amp;rsquo;s just amazing. I&amp;rsquo;m sure it&amp;rsquo;s far too watered down for anyone truly studying the sciences, but the analogies make things a bit more understandable for my feeble brain.</description>
+    </item>
+    
+    <item>
+      <title>2006 02 08 More: A Short History</title>
+      <link>http://mjladd.github.io/blog/2006-02-08-more-a-short-history/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2006-02-08-more-a-short-history/</guid>
+      <description>Deprived of water, the human body decays rapidly; within days the lips vanish (as if amputated), the gums blacken, the nose withers to half its length, and the skin contracts around the eyes to the degree that it becomes impossible to blink.
+The water we drink has been around since the earth was young. By 3.8 billion years ago the oceans had basically achieved their current volume.
+Water is incredibly fluid (pun), the molecular bond is strong enough to flow uphill when siphoned and cause pain from a belly flop , but weak enough to separate when diving into a pool.</description>
+    </item>
+    
+    <item>
+      <title>2006 02 09 Life as a Clock</title>
+      <link>http://mjladd.github.io/blog/2006-02-09-life-as-a-clock/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2006-02-09-life-as-a-clock/</guid>
+      <description>Considering the 4.5 billion years of the planet compressed into one earth day:
+ 4:00 am - life begins (single cell organisms) // nothing advances for the next 16 hours 8:30 pm - first sea plants emerge 8:50 pm - first jellyfish and Ediacaran fauna 9:04 pm - trilobites appear 10:00 pm - first land plants 10:05 pm - first land creatures 10:24 pm - carboniferous forests emerge and first winged insects 11:00 pm - dinosaurs 11:38 pm - age of mammals 11:58:47 - humans emerge  Relatively speaking, humans have been on the planet for about 77 seconds of a 24 hr day.</description>
+    </item>
+    
+    <item>
+      <title>2006 02 11 the Bad Plus</title>
+      <link>http://mjladd.github.io/blog/2006-02-11-the-bad-plus/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2006-02-11-the-bad-plus/</guid>
+      <description>We caught &amp;lsquo;The Bad Plus&amp;rsquo; last night at one of my favorite venues, The Old Town School of Folk Music. Holy crap was that amazing. I&amp;rsquo;ve been listening to their tunes for the past year or so, and even though their CDs were produced by Tchad Blake, the don&amp;rsquo;t come anywhere close to demonstrating what the are capable of in a live setting.
+The played a very tight set, highlighting their most recent project, &amp;lsquo;Suspicious Activity&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>2006 03 06 Muncie in the Paper</title>
+      <link>http://mjladd.github.io/blog/2006-03-06-muncie-in-the-paper/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2006-03-06-muncie-in-the-paper/</guid>
+      <description>This weekend, the Chicago Tribune had an article that mentioned the current economic status of Muncie, IN. I had spent a good deal of the 90s attending school there at Ball State. It is a odd mix of a college town and a blue-collar town, where the college kids try to avoid the locals, and the locals blame everything bad on the school. Last summer Nathan and I made a quick drive-thru, and took a look around where I had spent so many years.</description>
+    </item>
+    
+    <item>
+      <title>2006 03 14 Donald Fagen</title>
+      <link>http://mjladd.github.io/blog/2006-03-14-donald-fagen/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2006-03-14-donald-fagen/</guid>
+      <description>The new Donald Fagen project &amp;lsquo;Morph the Cat&amp;rsquo; came out today and now I&amp;rsquo;m happily grooving to Mr. Fagen&amp;rsquo;s music.
+There were two events that finally got me into the music of Steely Dan and Messrs. Fagen and Becker. I was driving back to college during a time when I nothing more to listen to than FM radio. I feel completely spoiled today with a CD player or iPod my vehicle, but I did have several lucky occurrences from scanning the radio dial.</description>
+    </item>
+    
+    <item>
+      <title>2006 03 19 Days of Altman</title>
+      <link>http://mjladd.github.io/blog/2006-03-19-days-of-altman/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2006-03-19-days-of-altman/</guid>
+      <description>Since I was in complete bodily pain after an overindulgent workout yesterday, I spend the day catching up on a few movies and make up a bit on my 52s list. I&amp;rsquo;ve hit the Altman section and made it through &amp;lsquo;MASH&amp;rsquo;, &amp;lsquo;Nashville&amp;rsquo;, and &amp;lsquo;ShortCuts&amp;rsquo; in the last two days. It&amp;rsquo;s been really interesting seeing three Altman films in a row. He&amp;rsquo;s always been one of my favorite directors and I try to catch anything that he does.</description>
+    </item>
+    
+    <item>
+      <title>2006 03 28 Louisville Trip</title>
+      <link>http://mjladd.github.io/blog/2006-03-28-louisville-trip/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2006-03-28-louisville-trip/</guid>
+      <description>Made it back from Louisville with no issues.
+Both flights were uneventful (in the best way) with no delays and the brother showed up with an airport pickup that Costanza would be proud of. Since we had skipped breakfast we made our way to Famous Dave&amp;rsquo;s BBQ for an exceptionally large lunch. I settled on the chopped pork and beef brisket with some fine sweet tea. Sweet tea and BBQ are a couple of the south&amp;rsquo;s saving graces.</description>
+    </item>
+    
+    <item>
+      <title>2006 04 02 Quiet Weekend</title>
+      <link>http://mjladd.github.io/blog/2006-04-02-quiet-weekend/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2006-04-02-quiet-weekend/</guid>
+      <description>Pretty good weekend, good to get away from thinking about work. With system administration, there&amp;rsquo;s always the worry that something will break, and I&amp;rsquo;ll miss an alert, and work will be a nightmare the moment I walk in. Being a small company, every little thing falls into either my lap, or James&amp;rsquo;.
+Phil came by and we got some decent Asian food and hung out for a bit playing cards. I threw &amp;lsquo;Clerks&amp;rsquo; on the DVD player for background noise.</description>
+    </item>
+    
+    <item>
+      <title>2006 09 24 Another Early Am</title>
+      <link>http://mjladd.github.io/blog/2006-09-24-another-early-am/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2006-09-24-another-early-am/</guid>
+      <description>6:00 AM and I&amp;rsquo;ve been up for a few hours already. Watching a video by Lyle Lovett on YouTube (She&amp;rsquo;s Already Made Up Her Mind). I remember seeing this video on a tiny little black and white TV at my parents old house. It made me a huge fan of Lovett&amp;rsquo;s music, and I&amp;rsquo;ve been lucky enough to see him several times live and even assisted with the sound for a performance while I was at the Interlochen Music Camp (Summer of 1999).</description>
+    </item>
+    
+    <item>
+      <title>2006 10 03 Milwaukee</title>
+      <link>http://mjladd.github.io/blog/2006-10-03-milwaukee/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2006-10-03-milwaukee/</guid>
+      <description>Since Jen had Monday off, we headed up to Milwaukee to get a short little vacation, pretty much the only time off that we&amp;rsquo;ll both have. Jen picked me up after class on Saturday and we headed northward. The trip went well until we got near downtown and the expressway just ended. After a futile attempt to find the hotel and being transferred to the wrong number from information, we managed to find our way to the lovely Ambassador Hotel.</description>
+    </item>
+    
+    <item>
+      <title>2006 12 31 Reading</title>
+      <link>http://mjladd.github.io/blog/2006-12-31-reading/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2006-12-31-reading/</guid>
+      <description>Summary: Since I had accumulated a huge backlog of unread books, I had planned out my reading for the entire year. A minimum of a book a week.
+Update: I got dragged down by a couple of slow books (I&amp;rsquo;m looking at you Thomas Friedman) and school took up a lot of time, I missed by goal by about 14 books.
+Reading List 2006
+ Time Management for System Administrators - Thomas Limoncelli A Clash of Kings - George R.</description>
+    </item>
+    
+    <item>
+      <title>2007 09 12 Population 485</title>
+      <link>http://mjladd.github.io/blog/2007-09-12-population-485/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2007-09-12-population-485/</guid>
+      <description>Started reading this last night, and it immediately took my back to my hometown. Michael has returned to his hometown and becomes a volunteer fireman. It&amp;rsquo;s a book that I wish I had an afternoon to lose myself in.
+Edit: I really like this line.
+&amp;ldquo;Working-class prejudice never quite shakes the idea of art as frivolity, and frivolity has pink-palms.&amp;rdquo;
+Coming from a small town, this was always something rolling around in my head while I was studying music.</description>
+    </item>
+    
+    <item>
+      <title>2007 09 15 Dfw2</title>
+      <link>http://mjladd.github.io/blog/2007-09-15-dfw2/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2007-09-15-dfw2/</guid>
+      <description>Infinite Jest was a title that rang in my head for some reason, so I picked up the $5 British pressing paperback at Barne&amp;rsquo;s and Noble while looking for something of decent length to read on my first post-college vacation in spring of 1999. On the flight from Indianapolis to Seattle (via Detroit) I opened the massive novel and dived in.
+One of my favorite memories of the trip was lying in the hostel in downtown Seattle and reading Infinite Jest.</description>
+    </item>
+    
+    <item>
+      <title>2007 10 11 Over There</title>
+      <link>http://mjladd.github.io/blog/2007-10-11-over-there/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2007-10-11-over-there/</guid>
+      <description>Last night at home with Jen, we had the Jazz cable music channel on while she was reading and I was working on the laptop. I heard &amp;ldquo;Over There&amp;rdquo; by Terence Blanchard and was stunned. I sat starting and the awful slideshow displayed by the channel and listened to the 7+ minute tune without moving. It&amp;rsquo;s rare that I hear much newer Jazz that hits me like this did. Afterwards, it was a quick visit to the Amazon MP3 store and I was all set.</description>
+    </item>
+    
+    <item>
+      <title>2007 12 31 Reading</title>
+      <link>http://mjladd.github.io/blog/2007-12-31-reading/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2007-12-31-reading/</guid>
+      <description>Summary:
+I had originally planned on taking this year to focus on only reading a few select large books (Infinite Jest, Underworld, etc..) but there&amp;rsquo;s just too much out there I want to read.
+Reading List 2007
+ Talk Talk - T. C. Boyle The Children&amp;rsquo;s Hospital - Chris Adrian The Sleeping Dragon - Joel Rosenberg The Road - Cormac McCarthy The Immortal Game - David Shenk Sex, Drugs, and Coco Puffs - Chuck Klosterman Bad Haircuts - Tom Perrotta Killing Yourself to Live - Chuck Klosterman Fargo Rock City - Chuck Klosterman Joe College - Tom Perrotta IV - Chuck Klosterman America&amp;rsquo;s Report Card - John McNally A Fistfull of Fig Newtons - Jean Shepherd Freakonomics - Steven Levit &amp;amp; Stephen Dubner When I Was a Loser - Ed.</description>
+    </item>
+    
+    <item>
+      <title>2008 01 08 Tale of Gods Will</title>
+      <link>http://mjladd.github.io/blog/2008-01-08-tale-of-gods-will/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-01-08-tale-of-gods-will/</guid>
+      <description>Terence Blanchard&amp;rsquo;s &amp;lsquo;A Tale of God&amp;rsquo;s Will&amp;rsquo; is my favorite jazz recording of last year, and probably in my top five music purchases as well. It reminds me of Pat Metheny&amp;rsquo;s &amp;lsquo;Secret Story&amp;rsquo; in it&amp;rsquo;s scope and ambition. Its difficult to marry the jazz ethos alongside a symphonic score, but Blanchard does an amazing job, without becoming sappy or overdone. </description>
+    </item>
+    
+    <item>
+      <title>2008 01 18 Lunchtime Reading</title>
+      <link>http://mjladd.github.io/blog/2008-01-18-lunchtime-reading/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-01-18-lunchtime-reading/</guid>
+      <description>I&amp;rsquo;ve been trying to spend my lunch hours at work reading. It&amp;rsquo;s a nice break from IT and gives me time to use the part of my brain that isn&amp;rsquo;t swearing at servers.
+My brother passed along a section of Richard Russo&amp;rsquo;s newest book a few weeks ago, and I just ran across it today. Pages 123-125 captures the most accurate telling of adolescence that I&amp;rsquo;ve ever read. I couldn&amp;rsquo;t get that section out of my head and went back to re-read it at least three times.</description>
+    </item>
+    
+    <item>
+      <title>2008 01 20 Distraction</title>
+      <link>http://mjladd.github.io/blog/2008-01-20-distraction/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-01-20-distraction/</guid>
+      <description>Every once in awhile I get the urge to dive back into music, to load up the laptop with music software and start being creative again. I blame it on two things; feeling like what I do now is not creative, and my brain trying to keep me from doing what I should be doing (in this case, homework).
+Since school has turned into a somewhat useless exercise in going through the motions, my brain is trying to save itself from boredom.</description>
+    </item>
+    
+    <item>
+      <title>2008 01 29 Bridge of Sighs</title>
+      <link>http://mjladd.github.io/blog/2008-01-29-bridge-of-sighs/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-01-29-bridge-of-sighs/</guid>
+      <description>Finished &amp;lsquo;Bridge of Sighs&amp;rsquo; last night when I should have been working on homework. For the second Russo novel in a row, I wish I stopped reading before the last 50 pages. As in &amp;lsquo;Empire Falls&amp;rsquo; the cliches stand out to the point of distraction. When the Magical Negroappears I wanted to throw the book away. In &amp;lsquo;Empire Falls&amp;rsquo;, the school shooting made me mad enough to mark the page to know when to stop when I get the time to re-read it.</description>
+    </item>
+    
+    <item>
+      <title>2008 03 01 a Tiny Victory</title>
+      <link>http://mjladd.github.io/blog/2008-03-01-a-tiny-victory/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-03-01-a-tiny-victory/</guid>
+      <description>Had a fantastic evening yesterday. Got out of work and picked up a quick meal before heading out to the library. It was great to have a couple of hours to simply think and knock out some work. I finished a paper for school and had some time to think and decompress.
+Counting down the weeks of class (T-13) and can&amp;rsquo;t wait to be done. It certainly wasn&amp;rsquo;t what I hoped it would be, but it was a gamble like anything else, we&amp;rsquo;ll see how it pays off.</description>
+    </item>
+    
+    <item>
+      <title>2008 03 23 Stapled to the Bone</title>
+      <link>http://mjladd.github.io/blog/2008-03-23-stapled-to-the-bone/</link>
+      <pubDate>Mon, 25 May 2020 14:05:03 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-03-23-stapled-to-the-bone/</guid>
+      <description>Tonight I&amp;rsquo;ve been flipping between the NCAA basketball playoffs and the NCAA wrestling championship. College wrestling gets little television time, but I&amp;rsquo;ve never seen any other athletes work as hard as wrestlers.
+I just saw a wrestler named Mark Perry from the University of Iowa (which has a tremendous history of success at the college level, including 21 national championships since 1975) wresting at 165 lbs. Five weeks out of surgery which involved his meniscus being stapled to his bone, Perry had his knee severely hyper-extended half-way through the second period of his match.</description>
+    </item>
+    
+    <item>
+      <title>2002 11 15 Peter Gabriel Live</title>
+      <link>http://mjladd.github.io/blog/2002-11-15-peter-gabriel-live/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2002-11-15-peter-gabriel-live/</guid>
+      <description>layout: post title: Peter Gabriel Live category: tags:
+ personal music type: post   Amazing show, too much to write about right now. Third time seeing him live, consistantly one of the greatest live performers with a fantastic band.
+Set List (as best as i can remember):
+ Here Comes the Flood Darkness Red Rain Secret World Sky Blue Downside-Up (from Ovo) The Barry Williams Show More Than This Mercy Street Digging In The Dirt Growing Up &amp;lt;&amp;mdash;&amp;ndash; maybe the highlight of the show Sledge Hammer Solsbury Hill Animal Nation (new Tune) Signal to Noise ENCORE 1: In Your Eyes.</description>
+    </item>
+    
+    <item>
+      <title>2002 12 31 Reading</title>
+      <link>http://mjladd.github.io/blog/2002-12-31-reading/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2002-12-31-reading/</guid>
+      <description>Summary:
+I finally wised up, left Florida and went back to my old gig. It was a big transition year, and I finally decided that I was going to do the IT thing and give up on academia. I had a lot of insights into the college gig thing and was incredibly disappointed.
+Reading List 2002
+ The Two Towers - J.R.R. Tolkien A Cook&amp;rsquo;s Tour - Anthony Bourdain The Nudist on the Late Shift - Po Bronson Vision Quest - Terry Davis Fletch - Gregory McDonald The Deep Blue Goodbye - John D.</description>
+    </item>
+    
+    <item>
+      <title>2003 01 23 Brutal</title>
+      <link>http://mjladd.github.io/blog/2003-01-23-brutal/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2003-01-23-brutal/</guid>
+      <description>Brutal cold today (2 degrees this morning), but i think last night was worse (-19 wind chill).
+Had a great time last night seeing Henry Rollins in Chicago. Pretty solid show. It&amp;rsquo;s good to see the changes over the years in his performances. A tough 1.5 hr wait in single digit temperature, but worth it, since we were only three rows back and dead center.
+It was a fantastic drive homeward, right through the city with it&amp;rsquo;s amazing buildings all lit up and gorgeous.</description>
+    </item>
+    
+    <item>
+      <title>2003 08 01 Vacation</title>
+      <link>http://mjladd.github.io/blog/2003-08-01-vacation/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2003-08-01-vacation/</guid>
+      <description>ugh, such a trauma to return from vacation, experiencing something new everyday, not knowing what the day will bring, and then returning to a structured existence. The body and soul take a bit of time to adjust.
+thursday (6/19)
+ leave from MDW to SEA (hurrah for direct flights), grab luggage and rental car (2003 chrysler sebring) and head northward to the town of Everett to stay at Kim &amp;amp; Mike&amp;rsquo;s home for the evening  friday (6/20)</description>
+    </item>
+    
+    <item>
+      <title>2003 08 20 Reminder</title>
+      <link>http://mjladd.github.io/blog/2003-08-20-reminder/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2003-08-20-reminder/</guid>
+      <description>Had a good reminder the other day, a nice email that reminded me of a big decision made, and how so correct it was. I took a big chance, and it didn&amp;rsquo;t really work out at the time, but things have fallen in place much better than I had ever thought they would.
+Looking back on the past year of work I really managed to get a lot accomplished. I knocked out the Solaris Certifications and am a MCSE.</description>
+    </item>
+    
+    <item>
+      <title>2003 09 22 Wilco</title>
+      <link>http://mjladd.github.io/blog/2003-09-22-wilco/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2003-09-22-wilco/</guid>
+      <description>Saw Wilco friday night. Such an amazing show. It&amp;rsquo;s been great finally seeing these bands I&amp;rsquo;ve listen to for years.
+Set List:
+ What&amp;rsquo;s the World Got In Store Kicking Television A Shot In the Arm I&amp;rsquo;m Always In Love Late Greats Magazine Called Sunset Box Full of Letters Kingpin I&amp;rsquo;m the Man Who Loves You Poor Places Reservations I Am Trying To Break Your Heart War On War Misunderstood Pieholden Suite California Stars Encore 1: Jesus, etc.</description>
+    </item>
+    
+    <item>
+      <title>2003 10 15 Michael Moore</title>
+      <link>http://mjladd.github.io/blog/2003-10-15-michael-moore/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2003-10-15-michael-moore/</guid>
+      <description>Headed into the city last night to catch Michael Moore at Northwestern. Pretty cool way to spend the evening. We hit Philly&amp;rsquo;s Best for grinders then drove mindlessly around campus before locating the hall.
+Oddly enough, it actually increased my optimism rather than depressed me with the facts. The facts are slowly trickling out about the Bush regime, and the horrible atrocities that have been committed. I can&amp;rsquo;t imagine being a parent, and having your child heading overseas for such loose and pathetic excuses.</description>
+    </item>
+    
+    <item>
+      <title>2003 11 29 a Little Reminder</title>
+      <link>http://mjladd.github.io/blog/2003-11-29-a-little-reminder/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2003-11-29-a-little-reminder/</guid>
+      <description>Until one is committed, there is hesitancy. the chance to draw back, always ineffectiveness concerning all acts of initiative (and creation). There is one elemental truth, the ignorance of which kills countless ideas and splendid plans - - - that the moment one definitely commits oneself, then Providence moves all. All sorts of things occur to help one that would never otherwise have occurred. A whole stream of events issue from the decision, raising in one&amp;rsquo;s favor all manner of incidents and meetings and material assistance which no one could have dreamed would come his or her way.</description>
+    </item>
+    
+    <item>
+      <title>2003 12 31 Reading</title>
+      <link>http://mjladd.github.io/blog/2003-12-31-reading/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2003-12-31-reading/</guid>
+      <description>Summary:
+2003 was the year I finally got back into Literature. There were even several short trips to Indianapolis to load up on used books. The end of my work days were usually spent at a bookstore, either studying or reading. I remember being in school and thinking just how happy I would be to make enough money to afford coffee and a book whenever I wanted.
+Reading List 2003</description>
+    </item>
+    
+    <item>
+      <title>2004 02 28 Packing</title>
+      <link>http://mjladd.github.io/blog/2004-02-28-packing/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2004-02-28-packing/</guid>
+      <description>Spent the day clearning out the room, and dumping everything into the basement. Tomorrow, the plan is to dig through the 13+ boxes of books, and hopefully find a few that can be disposed of. I&amp;rsquo;m very particular w/ getting rid of books, they&amp;rsquo;re tied to too many memories of where I was when I heard of a particular author, or when I read a particular book.
+I remember the first time I finally found Bukowski and Selby in the Ball State libary.</description>
+    </item>
+    
+    <item>
+      <title>2004 03 29 Shrink</title>
+      <link>http://mjladd.github.io/blog/2004-03-29-shrink/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2004-03-29-shrink/</guid>
+      <description>Up later that I should be, can&amp;rsquo;t seem to sleep much lately. It&amp;rsquo;s been a few days since I&amp;rsquo;ve gotten more than six hours. That used to be no biggie, and I was cranking on the coffee, but I&amp;rsquo;m down to at most a single can of diet coke a day for caffeine intake. This is just brain-not-shutting up energy.
+Thinking a lot about the future, the next step, the next plans, plenty to do, just need the time to do it.</description>
+    </item>
+    
+    <item>
+      <title>2004 04 15 Long Weekend</title>
+      <link>http://mjladd.github.io/blog/2004-04-15-long-weekend/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2004-04-15-long-weekend/</guid>
+      <description>Taking the day off tomorrow, been working about 11 days straight after last weekend&amp;rsquo;s domain move fiasco. The weather&amp;rsquo;s been pretty amazing, springlike (mid 70s) and quite comfortable.
+Took off an hour early after fighting with the president&amp;rsquo;s workstation. It was fantastic to drive home with the windows down and the new Wilco CD (A Ghost is Born) at full volume.
+Aside from work, the rest of life is starting to settle into place.</description>
+    </item>
+    
+    <item>
+      <title>2004 04 16 Spoiled</title>
+      <link>http://mjladd.github.io/blog/2004-04-16-spoiled/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2004-04-16-spoiled/</guid>
+      <description>I could easily get spoiled by days like today.
+76 degrees and gorgeous. I swiped Jen&amp;rsquo;s iPod and loaded in with some new music I got last night (Grant Lee Phillips and My Morning Jacket) and headed out to walk along the lake front. It&amp;rsquo;s so great to have access to Lake Michigan only 10 minutes away. There&amp;rsquo;s no way I&amp;rsquo;d want to move to the western suburbs and lose that.</description>
+    </item>
+    
+    <item>
+      <title>2004 04 28 Selby</title>
+      <link>http://mjladd.github.io/blog/2004-04-28-selby/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2004-04-28-selby/</guid>
+      <description>A Scream Looking for a Mouth:
+One of my favorite authors, Hubert Selby Jr. passed away. He was the author of &amp;ldquo;Last Exit to Brooklyn&amp;rdquo; and &amp;ldquo;Requiem for a Dream&amp;rdquo; and others.
+His books were huge for me when I was in college. &amp;ldquo;The Demon&amp;rdquo; was just pure hell ripping through the pages. One of the most honest looks at stupid male behavior, it always served as a great reminder to me of how capable everyone is of self-destruction.</description>
+    </item>
+    
+    <item>
+      <title>2004 05 13 Fog of War</title>
+      <link>http://mjladd.github.io/blog/2004-05-13-fog-of-war/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2004-05-13-fog-of-war/</guid>
+      <description>Just finished watched the latest Errol Morris film, Fog of War. Morris&amp;rsquo; films are always compelling, he has a definite knack for discovering worthy subjects. This time the subject was Robert McNamara.
+I do hope that at the age of 85, I have some semblance of coherence and memory that Mr. McNamara retains.
+&amp;ldquo;At my age, 85, I&amp;rsquo;m at an age where I can look back and derive some conclusions about my actions.</description>
+    </item>
+    
+    <item>
+      <title>2004 05 21 Peaceful Night</title>
+      <link>http://mjladd.github.io/blog/2004-05-21-peaceful-night/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2004-05-21-peaceful-night/</guid>
+      <description>Just a good, peaceful evening. White Sox game on low (beating Minnesota), a few windows open, and nice steady rainfall in the background. Jen is out for the evening, so I&amp;rsquo;m catching up on some mundane IT tasks.
+This is good, this is calming, the quiet is very much enjoyed. For further excitement, I expect a fair amount of reading will round out the evening following the games conclusion. Yep, this is the pure, burning excitement of my life.</description>
+    </item>
+    
+    <item>
+      <title>2004 06 05 Book Fair</title>
+      <link>http://mjladd.github.io/blog/2004-06-05-book-fair/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2004-06-05-book-fair/</guid>
+      <description>While Jen spent the day hiking 26 miles through the streets of Chicago doing the Avon Walk for Cancer, I spent the day with my brother at the Chicago Printer&amp;rsquo;s Row Book Fair. Five blocks of booksellers, food, and live readings. It was amazing to see the streets packed with folks with that much interest in reading.
+We got to see Chuck Palahniuk perform &amp;lsquo;Guts&amp;rsquo;. Only three people fainted during the reading, bringing the total on his reading tour up to 43 people who have passed out during the performance.</description>
+    </item>
+    
+    <item>
+      <title>2004 11 19 From Neil Steinberg</title>
+      <link>http://mjladd.github.io/blog/2004-11-19-from-neil-steinberg/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2004-11-19-from-neil-steinberg/</guid>
+      <description>Our office shares a lobby with the Illinois Institute of Art. Its students are always scattered around at small tables, meticulously going at a pad of onion paper with a straight edge and a drafting instrument.
+I sometimes pause and take advantage of their being so focused to really look at them: all of 19 or 20, thin as pencils, dressed in the latest silly fashion and pouring their souls into a rendering of a costume or a house or a frog.</description>
+    </item>
+    
+    <item>
+      <title>2004 11 22 Lagq</title>
+      <link>http://mjladd.github.io/blog/2004-11-22-lagq/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2004-11-22-lagq/</guid>
+      <description>While browsing the local Sunday paper, I happend to see that the Los Angeles Guitar Quartet was performing in town that evening.
+The concert was at the University of Chicago campus, w/ the poor directions we were given, we enjoyed a nice tour of the south-side of Chicago. There are a few rough areas down there. When we hit Comiskey Park, we don&amp;rsquo;t even hit the local restaurants.
+After a couple of detours, we managed to find street parking and grabbed a couple of available tix.</description>
+    </item>
+    
+    <item>
+      <title>2004 12 09 Alaska</title>
+      <link>http://mjladd.github.io/blog/2004-12-09-alaska/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2004-12-09-alaska/</guid>
+      <description>Been checking out this journal for awhile, &amp;ldquo;To Philly, From Alaska, w/ love&amp;rdquo;. This guy seems to be living out my &amp;lsquo;Northern Exposure&amp;rsquo;-inspired dreams of running away to Alaska.
+&amp;ldquo;In Alaska, the bigger rivers that connect villages become state highways when they freeze.&amp;rdquo;
+Sounds like perfection.</description>
+    </item>
+    
+    <item>
+      <title>2004 12 31 Reading</title>
+      <link>http://mjladd.github.io/blog/2004-12-31-reading/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2004-12-31-reading/</guid>
+      <description>Summary:
+I left the old job and moved up near Chicago. I was an IT department of one, trying to upgrade and entire office by myself. I&amp;rsquo;m surprised that I had enough time to read the books that I did. I didn&amp;rsquo;t run across many new authors this year, but did manage to read more Richard Yates.
+Reading List 2004
+ Harry Potter and the Goblet of Fire - J. K.</description>
+    </item>
+    
+    <item>
+      <title>2005 05 09 Wilco 050705</title>
+      <link>http://mjladd.github.io/blog/2005-05-09-wilco-050705/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2005-05-09-wilco-050705/</guid>
+      <description>Got to see Wilco again this weekend. The last night of a four night run at the Vic Theatre. All for nights were being taped for a DVD due out this fall. Pretty amazing set list, but the technical issues hurt the momentum a bit. Yep, that is indeed 35 songs. The band looked wiped out when the show ended (8:15 to 11:59).
+Set List
+ Misunderstood (w/ Horns) Company in My Back The Late Greats Hummingbird At Least That&amp;rsquo;s What You Said IATTBYH A Shot in the Arm Muzzle of Bees Via Chicago Handshake Drugs Jesus, etc.</description>
+    </item>
+    
+    <item>
+      <title>2005 06 28 Southern Change Gonna Come at Last</title>
+      <link>http://mjladd.github.io/blog/2005-06-28-southern-change-gonna-come-at-last/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2005-06-28-southern-change-gonna-come-at-last/</guid>
+      <description>It was a face I&amp;rsquo;d seen a thousand times at every Derby I&amp;rsquo;d ever been to. I saw it, in my head, as the mask of the whiskey gentry&amp;ndash;a pretentious mix of booze, failed dreams and a terminal identity crisis; the inevitable result of too much inbreeding in a closed and ignorant culture. - HST
+ The trip went well, aside from a one hour delay b/w boarding and take-off, but we had no connecting flights, so the stress was minimal.</description>
+    </item>
+    
+    <item>
+      <title>2005 06 29 Remix Rewind Regurgitate</title>
+      <link>http://mjladd.github.io/blog/2005-06-29-remix-rewind-regurgitate/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2005-06-29-remix-rewind-regurgitate/</guid>
+      <description>The current issue of wired magazine arrived the other day (I thought my subscription ran out 5 months ago) with the cover saying something about &amp;lsquo;Remix Now!&#39;. I&amp;rsquo;ve been hearing how &amp;lsquo;remixing&amp;rsquo; is the new buzzword, which makes me quite nauseous.
+I&amp;rsquo;m not certain who started this, but it&amp;rsquo;s an unfortunate terminology. I think of remixing in the audio world, where singles were remixed to increase their playing time for the dance environment.</description>
+    </item>
+    
+    <item>
+      <title>2005 08 02 Resumes and Stuff</title>
+      <link>http://mjladd.github.io/blog/2005-08-02-resumes-and-stuff/</link>
+      <pubDate>Mon, 25 May 2020 14:05:02 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2005-08-02-resumes-and-stuff/</guid>
+      <description>I think I&amp;rsquo;ll start taking notes here about resume&amp;rsquo;s and applying for work.
+I&amp;rsquo;ve spend the last week digging through 85+ resumes trying to find competent individuals. This is no fun, and applicants seem to have the express goal of trying to make it harder for me. This makes me mad and makes me not want to hire a single person. I&amp;rsquo;ve checked into helper monkeys, but they&amp;rsquo;re to smart to take a sysadmin gig.</description>
+    </item>
+    
+    <item>
+      <title>2001 12 31 Reading</title>
+      <link>http://mjladd.github.io/blog/2001-12-31-reading/</link>
+      <pubDate>Mon, 25 May 2020 14:05:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2001-12-31-reading/</guid>
+      <description>Summary:
+I was still in Florida, but my time was coming to an end. After a very disappointing first year at school, I attempted one more year, hoping that the teaching opportunity would help. It was good to finally get into writers such as Richard Russo and Michael Chabon.
+Reading List 2001
+ Let the Dog Drive - David Bowman The Big U - Neal Stephenson Crypto - Steven Levy Blue Angel - Francine Prose Invisible Mosters - Chuck Palahniuk Secrets and Lies - Bruce Schneider Ender&amp;rsquo;s Game - Orson Scott Card Just for Fun - Linus Tovalds and David Diamond The Risk Pool - Richard Russo Plainsong - Kent Haruf Turned On - James Parker Breakfast of Champions - Kurt Vonnegut Open Sources - (editors) Chris DiBona, Sam Ockman, Mark Stone Think Unix - John Hassler Big Bad Love - Larry Brown Trailorpark - Russell Banks Kitchen Confidential - Anthony Bourdain Straight Man - Richard Russo A Prayer for Owen Meany - John Irving Wonderboys - Michael Chabon The Fellowship of the Ring - J.</description>
+    </item>
+    
+    <item>
+      <title>2002 01 08 Gopher</title>
+      <link>http://mjladd.github.io/blog/2002-01-08-gopher/</link>
+      <pubDate>Mon, 25 May 2020 14:05:01 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2002-01-08-gopher/</guid>
+      <description>reading old &amp;lsquo;issues&amp;rsquo; of suck thanks to a link by Dave Winer&amp;hellip;
+I really miss the ol&amp;rsquo; cyncism/optimism of the early sprout of the web. On one side was the idealism and world changing mentality that made quite a number of folks very wealthy. Then there was &amp;lsquo;suck.com&amp;rsquo;, one of the first web sites i can remember visiting (yep, i remember life before the web, and how excited i was by the access to all that information).</description>
+    </item>
+    
+    <item>
+      <title>2001 02 10 Clarity</title>
+      <link>http://mjladd.github.io/blog/2001-02-10-clarity/</link>
+      <pubDate>Mon, 25 May 2020 13:58:44 -0500</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2001-02-10-clarity/</guid>
+      <description>Nice quick bike-ride home, lots of thoughts. Back in the studio and working on the piece, makes me think a lot about this silly little world i&amp;rsquo;m involved in.
+I have a lifetime of love for music, it&amp;rsquo;s my favorite of the arts and IMHO the greatest. But the unfortunate problem is who/what you come in contact with in the world of music (in particular that of academic music). Perhaps that&amp;rsquo;s why I still have such a passion for literature, I don&amp;rsquo;t know too many writers, if i did, i may come to dislike literature as much as i&amp;rsquo;m coming to dislike music.</description>
+    </item>
+    
+    <item>
+      <title>lifing</title>
+      <link>http://mjladd.github.io/blog/2008-04-27-clarity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://mjladd.github.io/blog/2008-04-27-clarity/</guid>
+      <description>I missed nearly a month of gym time due to shoulder surgery, but I tried to be in the best possible shape going into the procedure. Over the summer I did nearly two months of two-a-day workouts and lifted up until the day of getting sliced (8/10/07). Just about a month later (9/6/07) I was ok&amp;rsquo;d to go back to the gym, and went in 20 lbs lighter and much weaker.</description>
+    </item>
+    
+  </channel>
+</rss>
